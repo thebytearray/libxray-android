@@ -1,0 +1,34 @@
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local machine / SDK path (never commit)
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# AGP / CMake / NDK
+.cxx/
+.externalNativeBuild/
+captures/
+
+# Kotlin
+.kotlin/
+
+# Native Go build outputs (libxray-go Makefile)
+libxray/src/main/cpp/libxray-go/out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs & dumps
+*.log
+*.hprof
+
+# Signing (if you add sample keys locally)
+*.jks
+*.keystore
