@@ -4,7 +4,7 @@ Android library embedding the Xray core (via [libxray](https://github.com/xtls/l
 
 ## License
 
-This project is licensed under the **GNU General Public License v3.0**. See the [`LICENSE`](LICENSE) file.
+This project is licensed under the **GNU General Public License v3.0**. See the `[LICENSE](LICENSE)` file.
 
 ## Add with JitPack
 
@@ -34,7 +34,7 @@ dependencyResolutionManagement {
 }
 ```
 
-2. Add the dependency. This is a **multi-module** Gradle project; the Android library lives in the `:libxray` module, so the JitPack coordinate includes that module name:
+1. Add the dependency. This is a **multi-module** Gradle project; the Android library lives in the `:libxray` module, so the JitPack coordinate includes that module name:
 
 **Kotlin DSL**
 
@@ -53,8 +53,6 @@ dependencies {
 ```
 
 Replace `VERSION` with a [Git tag](https://github.com/thebytearray/libxray-android/tags), branch name, or commit hash (for example `1.0.0` or `abc1234`).
-
-3. After the first JitPack build, open the log on [jitpack.io](https://jitpack.io/#thebytearray/libxray-android) if anything fails (native builds need Go and the Android NDK; see [`jitpack.yml`](jitpack.yml) and [`scripts/jitpack-setup.sh`](scripts/jitpack-setup.sh)).
 
 ## Usage
 
@@ -76,3 +74,4 @@ Publish to Maven Local (same as JitPack’s Gradle step):
 ```bash
 ./gradlew :libxray:publishReleasePublicationToMavenLocal
 ```
+

@@ -1,9 +1,9 @@
+# https://docs.jitpack.io/building/
 jdk:
   - openjdk17
 
 before_install:
-
-  - ./scripts/jitpack-setup.sh
+  - bash scripts/jitpack-setup.sh
 
 install:
-  - export GOTOOLCHAIN=auto PATH="/usr/local/go/bin:$PATH" && ./gradlew :libxray:publishReleasePublicationToMavenLocal --no-daemon --stacktrace
+  - source "${HOME}/.jitpack-go-env.sh" && export GOTOOLCHAIN=auto && ./gradlew :libxray:publishReleasePublicationToMavenLocal --no-daemon --stacktrace
